@@ -56,7 +56,7 @@ class solution
       }
       else
       {
-        $result = 'Comet ' . $key . ' will NOT take group ' . $group;
+        $result .= 'Comet ' . $key . ' will NOT take group ' . $group;
       }
 
       $result .= "\n";
@@ -92,6 +92,4 @@ $groups = [
   'KUSHIDA' => 'AZUL'
 ];
 
-$solution = new solution($groups);
-
-echo $solution;
+echo new solution($groups);
